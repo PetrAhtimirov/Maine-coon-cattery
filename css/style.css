@@ -3,9 +3,9 @@
 @font-face {
 	font-family: "Yeseva One";
 	src: local("Yeseva One"), local("YesevaOne"),
-		url("fonts/yesevaone.woff2") format("woff2"),
-		url("fonts/yesevaone.woff") format("woff"),
-		url("fonts/yesevaone.ttf") format("truetype");
+		url("../fonts/yesevaone.woff2") format("woff2"),
+		url("../fonts/yesevaone.woff") format("woff"),
+		url("../fonts/yesevaone.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -22,20 +22,10 @@ html {
 
 body {
 	background-color: #353434;
-	padding: 50px 0;
 }
 
 .page {
-	border-radius: 20px;
 	width: 1286px;
-	margin-right: auto;
-	margin-left: auto;
-	filter: drop-shadow(0px 100px 80px rgba(57, 37, 15, 0.07))
-		drop-shadow(0px 64.8148px 46.8519px rgba(57, 37, 15, 0.0531481))
-		drop-shadow(0px 38.5185px 25.4815px rgba(57, 37, 15, 0.0425185))
-		drop-shadow(0px 20px 13px rgba(57, 37, 15, 0.035))
-		drop-shadow(0px 8.14815px 6.51852px rgba(57, 37, 15, 0.0274815))
-		drop-shadow(0px 1.85185px 3.14815px rgba(57, 37, 15, 0.0168519));
 	overflow: hidden;
 	position: relative;
 	font-family: "Roboto", "Arial", sans-serif;
@@ -44,6 +34,23 @@ body {
 	font-weight: 400;
 	color: #ffffff;
 	background-color: #151313;
+}
+
+@media (min-width: 1304px) {
+	body {
+		padding: 50px 0;
+	}
+	.page {
+		border-radius: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		filter: drop-shadow(0px 100px 80px rgba(57, 37, 15, 0.07))
+			drop-shadow(0px 64.8148px 46.8519px rgba(57, 37, 15, 0.0531481))
+			drop-shadow(0px 38.5185px 25.4815px rgba(57, 37, 15, 0.0425185))
+			drop-shadow(0px 20px 13px rgba(57, 37, 15, 0.035))
+			drop-shadow(0px 8.14815px 6.51852px rgba(57, 37, 15, 0.0274815))
+			drop-shadow(0px 1.85185px 3.14815px rgba(57, 37, 15, 0.0168519));
+	}
 }
 
 a {
@@ -573,10 +580,6 @@ img {
 	max-width: 255px;
 	text-align: right;
 }
-.breed-features__item--cohabitation:hover {
-	padding-right: 20px;
-	transition: all 200ms ease-out;
-}
 
 .breed-features__item--cohabitation::before {
 	right: -39px;
@@ -587,10 +590,7 @@ img {
 	right: -482px;
 	max-width: 201px;
 }
-.breed-features__item--instruction:hover {
-	padding-left: 20px;
-	transition: all 200ms ease-out;
-}
+
 .breed-features__item--instruction::before {
 	top: 3px;
 	left: -36px;
@@ -601,10 +601,7 @@ img {
 	right: -444px;
 	max-width: 160px;
 }
-.breed-features__item--weight:hover {
-	padding-left: 5px;
-	transition: all 200ms ease-out;
-}
+
 .breed-features__item--weight::before {
 	top: 6px;
 	left: -33px;
@@ -616,10 +613,7 @@ img {
 	left: -370px;
 	text-align: right;
 }
-.breed-features__item--appearance:hover {
-	padding-right: 10px;
-	transition: all 200ms ease-out;
-}
+
 .breed-features__item--appearance::before {
 	right: -31px;
 }
@@ -647,10 +641,6 @@ img {
 }
 .list__btn {
 	padding-right: 10px;
-}
-.list__btn:hover {
-	padding-left: 70px;
-	transition: all 150ms ease-in;
 }
 
 .advantages {
@@ -753,7 +743,6 @@ img {
 	display: block;
 }
 .red_cat {
-	background-image: url("red_cat.png");
 	position: absolute;
 	left: 726px;
 	top: 42px;
@@ -767,6 +756,7 @@ img {
 	margin-left: 100px;
 	margin-right: 100px;
 	padding: 30px;
+	border: 1px solid #1f1c1d;
 }
 .list_pre:hover {
 	background-color: #151313;
